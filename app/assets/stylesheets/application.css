@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -16,7 +15,6 @@ h1 {
 
 body {
     display: block;
-    background-color: #fff;
     color: #333;
     font-family: verdana, arial, helvetica, sans-serif;
     font-size: 13px;
@@ -107,6 +105,7 @@ a:hover {
 
 label {
     display: block;
+    margin-bottom: 10px;
 }
 
 #notice {

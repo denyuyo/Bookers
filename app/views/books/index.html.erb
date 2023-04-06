@@ -1,4 +1,4 @@
-<p id="notice"><%= notice %></p>
+<p id="notice">Book was successfully destroyed.</p>
 
 <h1>Books</h1>
 
@@ -17,7 +17,7 @@
         <td><%= book.title %></td>
         <td><%= book.body %></td>
         <td><%= link_to 'Show', book %></td>
-        <td><%= link_to 'Edit', edit_book_path(book) %></td>
+        <td><%= link_to 'Edit', book_path(book) %></td>
         <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
@@ -25,12 +25,19 @@
 </table>
 
 <h2>New Book</h2>
+
 <%= form_with model: @book do |f| %>
-  <p>title</p>
+ <div>
+   <label>Title</label>
   <%= f.text_field :title %>
-	
-  <p>body</p>
+ </div>
+  
+	<div>
+	  <label>Body</label>
   <%= f.text_area :body %>
+	</div>
 	
-  <%= f.submit 'Create Book' %>
+ <div>
+   <%= f.submit 'Create Book' %>
+ </div> 
 <% end %>

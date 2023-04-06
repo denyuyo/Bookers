@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  box-sizing: border-box;
 }
 
 h1 {
@@ -85,11 +84,6 @@ form {
     margin-top: 0em;
 }
 
-div.field, div.actions {
-    display: block;
-    margin-bottom: 10px;
-}
-
 a:visited {
     color: #666;
 }
@@ -105,8 +99,15 @@ a:hover {
 
 label {
     display: block;
+}
+
+input[type="text" i] {
     margin-bottom: 10px;
 }
+textarea {
+    margin-bottom: 10px;
+}
+
 
 #notice {
     color: green;

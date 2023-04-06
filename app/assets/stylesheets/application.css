@@ -112,3 +112,11 @@ textarea {
 #notice {
     color: green;
 }
+
+lable {
+    display: block;
+}
+
+div.action {
+    margin-bottom: 10px;
+}

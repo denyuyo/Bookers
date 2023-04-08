@@ -118,6 +118,10 @@ lable {
     cursor: default;
 }
 
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 1px;
+}
+
 div.action {
     margin-bottom: 10px;
 }
@@ -164,13 +168,4 @@ li {
     padding: 2px;
     background-color: red;
     display: table;
-}
-
-#error_explanation {
-    width: 450px;
-    border: 2px solid red;
-    padding: 7px;
-    padding-bottom: 0;
-    margin-bottom: 20px;
-    background-color: #f0f0f0;
 }
